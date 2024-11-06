@@ -1,7 +1,4 @@
-//
-// STARTER CODE: hashmap.cpp
-//
-// TODO:  Write your own header and fill in all functions marked TODO below.
+
 //
 
 #include "hashmap.h"
