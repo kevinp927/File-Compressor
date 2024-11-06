@@ -2,8 +2,6 @@
 //  main.cpp
 //  File Compression II
 //
-//  Created by Keyur Patel on 4/2/22.
-//
 
 #include <iostream>
 #include <fstream>
