@@ -18,13 +18,6 @@
  * obitstream class similarly has ofbitstream and ostringbitstream as
  * subclasses.
  *
- * @author Keith Schwarz, Eric Roberts, Marty Stepp
- * @version 2019/04/20
- * - added toPrintable(string)
- * @version 2018/09/25
- * - added doc comments for new documentation generation
- * @version 2016/11/12
- * - made toPrintable non-static and visible
  */
 #ifndef _bitstream_h
 #define _bitstream_h
@@ -58,9 +51,6 @@ const int NOT_A_CHAR = 257;
  * along with an added member function for reading a single bit and convenience
  * functions for rewinding the stream back to the beginning and getting the stream
  * size.
- *
- * You will probably not create instances of this class directly.  Instead, you
- * will create ifbitstreams or istringbitstreams to read from files or string buffers.
  */
 
 static const int NUM_BITS_IN_BYTE = 8;
@@ -72,6 +62,7 @@ inline int GetNthBit(int n, int fromByte) {
 inline void SetNthBit(int n, int & inByte) {
     inByte |= (1 << n);
 }
+
 
 class ibitstream: public std::istream {
 public:
